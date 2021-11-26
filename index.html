@@ -4,7 +4,6 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="UTF-8">
     <title>打地鼠-芹菜1.0版本</title>
-    <fort color="#B0E0E6">by 稚名澜山</font>
     <style type="text/css">
         *{
             padding: 0;
@@ -12,7 +11,7 @@
         }
         body{
             text-align: center;
-            background-color: #87CEEB;
+            background-color: cornsilk;
             overflow: hidden;
         }
         h1{
@@ -25,8 +24,8 @@
         img,.active{
             position: absolute;
             width: 33.33%;
-            max-width: 400px;
-            max-height: 400px;
+            max-width: 300px;
+            max-height: 300px;
             transform: scale(0);
             -webkit-transform: scale(0);
             transition: all .4s ease-out;
@@ -58,7 +57,7 @@
     </style>
 </head>
 <body>
-<h1>打地鼠-芹菜1.0版本</h1>
+<h1>打芹菜地鼠</h1>
 <h2>point:0</h2>
 <h2>剩余机会:3</h2>
 <div class="diShu">
@@ -176,7 +175,7 @@
         clearTimeout(t2);
 
         setTimeout(function(){//延时一点
-            alert("您输了，共打了"+points+"只芹菜地鼠。");
+            alert("游戏结束，共打了"+points+"只芹菜地鼠。");
             for(var i=0;i<rats.length;i++){
                 rats[i].classList.remove("active");//全部地鼠隐藏
             }
