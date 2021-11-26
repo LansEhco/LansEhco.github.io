@@ -59,7 +59,7 @@
 </head>
 <body>
 <h1>打芹菜地鼠</h1>
-<h2>point:0</h2>
+<h2>score:0</h2>
 <h2>剩余机会:3</h2>
 <div class="diShu">
 
@@ -90,10 +90,10 @@
     };
 
     function initGame(){
-        score = 0;
+        points = 0;
         hp = 3;
         interval = 100;
-        document.getElementsByTagName("h2")[0].innerHTML = "得分:"+points;
+        document.getElementsByTagName("h2")[0].innerHTML = "score:"+points;
         document.getElementsByTagName("h2")[1].innerHTML = "剩余机会:"+hp;
         t = setInterval(function(){
             generateRats();//产生地鼠的方法
